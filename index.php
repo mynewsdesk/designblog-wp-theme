@@ -25,6 +25,7 @@
 			<?php the_category(); ?>
 			<?php the_content(); ?>
 			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><p class="date">Published <?php the_date(); ?> by <?php the_author() ?></p></time>
+			<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
 		</article>
 	</li>
 

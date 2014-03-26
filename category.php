@@ -21,6 +21,7 @@
 			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<?php the_category(); ?>
 			<?php the_content(); ?>
+			<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
 		</article>
 	</li>
 <?php endwhile; ?>

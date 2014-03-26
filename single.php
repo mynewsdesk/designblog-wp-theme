@@ -20,6 +20,7 @@
 			<?php the_category(); ?>
 			<?php the_content(); ?>	
 			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate>Posted <?php the_date(); ?></time>
+			<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
 
 	<?php if ( get_the_author_meta( 'description' ) ) : ?>
 	<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
