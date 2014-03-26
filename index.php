@@ -24,7 +24,7 @@
 			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<?php the_category(); ?>
 			<?php the_content(); ?>
-			<?php the_tags('<ul id="tags"><li>#','</li><li>#','</li></ul>'); ?>
+			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><p class="date">Published <?php the_date(); ?> by <?php the_author() ?></p></time>
 		</article>
 	</li>
 

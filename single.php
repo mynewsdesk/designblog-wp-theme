@@ -17,8 +17,9 @@
 
 	<?php the_post_thumbnail( 'category-thumb' ); ?>
 			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<?php the_category(); ?>, <time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?></time>
+			<?php the_category(); ?>
 			<?php the_content(); ?>	
+			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate>Posted <?php the_date(); ?></time>
 
 	<?php if ( get_the_author_meta( 'description' ) ) : ?>
 	<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>

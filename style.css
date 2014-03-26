@@ -153,7 +153,8 @@ article {
 			text-decoration: underline;
 		}
 
-	article time {
+	article p.date {
+		margin-top: 4em;
 		color: #999;
 	}
 
