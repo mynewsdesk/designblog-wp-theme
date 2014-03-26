@@ -158,6 +158,14 @@ article {
 		color: #999;
 	}
 
+/* Archive 
+----------------------------------------*/
+
+h2.archive {
+	margin-bottom: 4em;
+	color: #999;
+}
+
 footer {
 	text-align: center;
 	margin: 6em;
