@@ -16,11 +16,11 @@
 <article>
 
 	<?php the_post_thumbnail( 'category-thumb' ); ?>
+			<?php the_post_thumbnail( 'category-thumb' ); ?>
 			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<?php the_category(); ?>
-			<?php the_content(); ?>	
-			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate>Posted <?php the_date(); ?></time>
-			<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
+			<?php the_content(); ?>
+			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><p class="date">Published <?php the_date(); ?> by <?php the_author() ?></p></time>
 
 	<?php if ( get_the_author_meta( 'description' ) ) : ?>
 	<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
