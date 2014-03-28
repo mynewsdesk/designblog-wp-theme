@@ -96,7 +96,6 @@ header {
 	-moz-animation: fadein .4s .5s 1 forwards ease-in-out;
 	animation: fadein .4s .5s 1 forwards ease-in-out;
 }
-}
 
 article {
 	margin: 0 auto 4em auto;
@@ -111,7 +110,7 @@ article {
 
 	article h2 a {
 		font-size: 2.2em;
-		line-height: 1.6em;
+		line-height: 1.3em;
 		color: #000;
 		text-decoration: none;
 	}
