@@ -105,7 +105,7 @@ article {
 }
 
 	article .wp-post-image {
-		margin: 0 0 4em 0;
+		margin: 0 0 2em 0;
 	}
 
 	article h2 a {
@@ -143,29 +143,8 @@ article {
 		text-decoration: underline;
 	}
 
-	article ul#tags {
-		font-style: italic;
-		text-align: center;
-		margin: 3em 0 0 0;
-		color: #999;
-	}
-
-		article ul#tags li {
-			display: inline-table;
-			margin: 0 0.5em;
-		}
-
-		article ul#tags li a {
-			color: #999;
-		}
-
-		article ul#tags li a:hover {
-			color: #666;
-			text-decoration: underline;
-		}
-
 	article p.date {
-		margin-top: 4em;
+		margin-top: 3em;
 		color: #999;
 	}
 
