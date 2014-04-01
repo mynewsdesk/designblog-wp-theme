@@ -1,7 +1,8 @@
 	
 	<footer>
 		<p>This blog is maintained by the design team at <a href="http://www.mynewsdesk.com" alt="Mynewsdesk.com">Mynewsdesk HQ</a></p>
-		<p>We're also on <a href="http://www.dribbble.com/mynewsdesk">Dribbble</a></p>
+		
+		<a href="http://www.dribbble.com/mynewsdesk" title="Mynewsdesk on Dribbble"><img src="<?php bloginfo('template_directory'); ?>/img/dribbble-logo.png" class="dribbble" /></a>
 	</footer>
 
 	<!-- Retina JS -->
