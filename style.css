@@ -100,7 +100,6 @@ header {
 article {
 	margin: 0 auto 3em auto;
 	padding: 0 0 2em 0;
-	text-align: center;
 	background: url(img/circle.png) bottom center no-repeat;
 }
 
@@ -123,8 +122,8 @@ article {
 		width: 95%;
 		margin: 2em auto;
 		font-size: 1.1em;
-		text-align: center;
 		color: #666;
+		text-align: left;
 	}
 
 	article ul.post-categories {
@@ -148,6 +147,73 @@ article {
 		margin-top: 3em;
 		color: #999;
 	}
+
+	/* Comments
+	----------------------------------------*/
+
+	article #comments {}
+
+		article #comments h2 {
+			font-size: 23px;
+			margin-bottom: 2em;
+		}
+
+		article #comments h3 {
+			font-size: 23px;
+		}
+
+		article #comments h4 a {
+			color: #000;
+			font-weight: bold;
+		}
+
+		article #comments time a {
+			color: #999;
+		}
+
+	/* Comment form
+	----------------------------------------*/	
+
+	article #respond {}
+
+		article #respond form {}
+
+		article #respond form label {
+			display: block;
+		}
+
+		article #respond form input, article #respond form textarea  {
+			padding: 10px 18px;
+			font-family: "Helvetica Neue", "Arial", sans-serif;
+			margin-top: 0.5em;
+			border-radius: 4px;
+			border: 1px solid #aaa;
+			background: #fff;
+			outline: none;
+		}
+
+			article #respond form input:hover, article #respond form textarea:hover {
+				border: 1px solid #333;
+			}
+
+			article #respond form input:focus, article #respond form textarea:focus {
+				border: 1px solid #379ac9;
+			}
+
+		article #respond form input[type="submit"] {
+		    border: 1px solid #999;
+		    background: #fff;
+		    color: #666;
+		    padding: 10px 18px;
+		    border-radius: 4px;
+		}
+
+		article #respond form input[type="submit"]:hover {
+		    border: 1px solid #9bb83b;
+		    background: #9bb83b;
+		    color: #fff;
+		}
+
 
 /* Archive 
 ----------------------------------------*/
@@ -217,7 +283,7 @@ footer {
 					article p {
 
 						margin: 2em auto;
-						text-align: center;
+						text-align: left;
 						color: #666;
 					}
 
@@ -241,6 +307,7 @@ footer {
 					article p.date {
 						margin-top: 3em;
 						color: #999;
+						text-align: center;
 					}
 
 				/* Archive 

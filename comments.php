@@ -11,6 +11,15 @@
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
+
+add_filter('comment_form_default_fields', 'url_filtered');
+function url_filtered($fields)
+{
+  if(isset($fields['url']))
+   unset($fields['url']);
+  return $fields;
+}
+
 ?>
 <div id="comments">
 	<?php if ( post_password_required() ) : ?>
